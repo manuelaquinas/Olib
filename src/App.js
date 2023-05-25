@@ -2,7 +2,7 @@ import "./App.css";
 import axios from "axios";
 import CardList from "./Components/CardList";
 import CardListVideo from "./Components/CardListVideo";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SearchInformation from "./Components/SearchInformation";
 import introJs from "intro.js";
 
@@ -75,7 +75,10 @@ const App = () => {
       });
   };
 
-  introJs().start();
+  useEffect(() => {
+    introJs().start();
+    return () => introJs().exit();
+  }, []);
 
   return (
     <div className="App">
@@ -270,7 +273,6 @@ const App = () => {
           >
             <CardListVideo data={dataYoutube} />
           </div>
-      
         </div>
       </div>
       <footer className="footer"></footer>
