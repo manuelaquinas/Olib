@@ -7,6 +7,7 @@ const CardListVideo = ({ data }) => {
   } else {
     return (
       <div>
+        <h2 className="SearchContainerTitle mt-4">Google Videos Data</h2>
         {data.video_results.map((data, i) => {
           return (
             <CardVideo

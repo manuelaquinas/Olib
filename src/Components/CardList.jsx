@@ -7,6 +7,7 @@ const CardList = ({ data }) => {
   } else {
     return (
       <div>
+        <h2 className="SearchContainerTitle mt-4">Google Scholar Data</h2>
         {data.organic_results.map((data, i) => {
           return (
             <Card
