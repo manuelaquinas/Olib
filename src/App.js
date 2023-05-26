@@ -176,7 +176,7 @@ const App = () => {
                 aria-label="Floating label select example"
               >
                 <option selected value="">
-                  Any languagea
+                  Any language
                 </option>
                 <option value="zh-cn">Chinese</option>
                 <option value="en">English</option>
